@@ -1,0 +1,80 @@
+html, body{
+    font-family: 'Lato', sans-serif;
+}
+
+/*FIRST SECTION*/
+#first-section{
+    background-color: #3C99DC;
+    padding-bottom: 200px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#main{
+    position: relative;
+    top: 50px;
+}
+
+#first-section h2{
+    font-size: 42;
+    font-weight: 400px;
+}
+
+#first-section p{
+    font-size: 28px;
+    font-weight: 300;
+    position: relative;
+    top: 50px;
+}
+
+#first-section .hashtag{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.border2{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.border3{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+#home{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 120px;
+}
+
+/*SECOND SECTION*/
+#second-section{
+    padding-top: 60px;
+    text-align: center;
+    color: #000000;
+}
+
+#second-section p{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#second-section select{
+    font-weight: 300;
+    font-size: 20px;
+    text-align-last: center;
+    border: 1px solid #CCC;
+    height: 34px;
+    border-radius: 6px;
+ }
+
+ #second-section select option{
+    font-weight: 300;
+    font-size: 20px;
+ }
+
+ #second-section select:focus > option:checked { 
+    background: rgb(83, 150, 209) !important;
+}
