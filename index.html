@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <script src="script/index.js"></script>
 </head> 
 <body>
     <div id="first-section">
@@ -22,20 +23,44 @@
             <div id="second-section" class="col-12">
                 <p>Seleccione el último dígito de su número de placa</p>
                 <div class="number-select">
-                    <select>
-                      <option value="0">Número de placa:</option>
-                      <option value="1">0</option>
-                      <option value="2">1</option>
-                      <option value="3">2</option>
-                      <option value="4">3</option>
-                      <option value="5">4</option>
-                      <option value="6">5</option>
-                      <option value="7">6</option>
-                      <option value="8">7</option>
-                      <option value="9">8</option>
-                      <option value="10">9</option>
+                    <select id="selectCarPlate" onchange="getRestriction()">
+                      <option value="10">Número de placa:</option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
                     </select>
-                  </div>
+                </div>
+            </div>
+            <div id="result" class="col-12">
+                <table class="restrictionTable">
+                    <thead>
+                        <tr>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miercoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                            <th>Sabado</th>
+                            <th>Domingo</th>
+                        </tr>
+                        <tr>
+                            <td id="lunes"></td>
+                            <td id="martes"></td>
+                            <td id="miercoles"></td>
+                            <td id="jueves"></td>
+                            <td id="viernes"></td>
+                            <td id="sabado"></td>
+                            <td id="domingo"></td>
+                        </tr>
+                    </thead>
+                </table>
             </div>
         </div>
     </div>

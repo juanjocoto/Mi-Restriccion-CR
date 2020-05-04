@@ -78,3 +78,11 @@ html, body{
  #second-section select:focus > option:checked { 
     background: rgb(83, 150, 209) !important;
 }
+
+#check{
+    display: none;
+}
+
+#negative{
+    display: none;
+}
