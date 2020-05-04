@@ -50,6 +50,11 @@ html, body{
 }
 
 /*SECOND SECTION*/
+
+#result{
+    display: none;
+}
+
 #second-section{
     padding-top: 60px;
     text-align: center;
@@ -86,3 +91,29 @@ html, body{
 #negative{
     display: none;
 }
+
+#restrictionTable {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+}
+  
+#restrictionTable td, #restrictionTable th {
+    font-family: 'Lato', sans-serif;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#restrictionTable tr:nth-child(even){background-color: #fcfcfc;}
+
+#restrictionTable td:hover {background-color: #e4e4e4;}
+
+#restrictionTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #3C99DC;
+  color: white;
+}
+  

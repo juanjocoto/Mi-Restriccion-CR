@@ -10,6 +10,7 @@ var check5 = document.createElement("IMG");
 function getRestriction(){
     setImageValues();
     var placa = document.getElementById('selectCarPlate').value;
+    document.getElementById('result').style="display:inline-block";
     switch (placa) {
         case '0':
             document.getElementById("viernes").appendChild(negative1);
@@ -55,9 +56,9 @@ function getRestriction(){
             document.getElementById("sabado").appendChild(check5);
             break;
             
-        case 4:
+        case '4':
             document.getElementById("martes").appendChild(negative1);
-            document.getElementById("sabdo").appendChild(negative2);
+            document.getElementById("sabado").appendChild(negative2);
             
             document.getElementById("lunes").appendChild(check1);
             document.getElementById("miercoles").appendChild(check2);
