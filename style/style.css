@@ -116,4 +116,16 @@ html, body{
   background-color: #3C99DC;
   color: white;
 }
+
+#information{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+.informationImg{
+    width: 32px;
+    height: 32px;
+}
   
