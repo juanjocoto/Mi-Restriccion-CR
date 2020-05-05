@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Mi Restricción CR</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <script src="script/index.js"></script>
+</head> 
+<body>
+    <div id="first-section">
+        <div id="main">
+            <h2>Mi Restricción CR</h2>
+            <p>Esta página fue desarrollada para facilitar la información con respecto a la restricción vehicular sanitaria debido al COVID-19</p>
+            <p class="hashtag">#QuedateEnCasa</p>
+        </div>
+        <img src="content/icons/house.png" alt="home" id="home">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="second-section" class="col-12">
+                <p>Seleccione el último dígito de su número de placa</p>
+                <div class="number-select">
+                    <select id="selectCarPlate" onchange="getRestriction()">
+                      <option value="10">Número de placa:</option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+            <div id="result" class="col-12">
+                <table id="restrictionTable">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Lunes</th>
+                            <th class="text-center">Martes</th>
+                            <th class="text-center">Miercoles</th>
+                            <th class="text-center">Jueves</th>
+                            <th class="text-center">Viernes</th>
+                            <th class="text-center">Sabado</th>
+                            <th class="text-center">Domingo</th>
+                        </tr>
+                        <tr>
+                            <td id="lunes" class="text-center"></td>
+                            <td id="martes" class="text-center"></td>
+                            <td id="miercoles" class="text-center"></td>
+                            <td id="jueves" class="text-center"></td>
+                            <td id="viernes" class="text-center"></td>
+                            <td id="sabado" class="text-center"></td>
+                            <td id="domingo" class="text-center"></td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div id="information">
+                <div class="col-sm-4">
+                    <img src="content/icons/icons8-delete.png" alt="restriction" class="informationImg">
+                    <p>NO PUEDE CIRCULAR DURANTE TODO EL DÍA</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="content/icons/icons8-checkmark.png" alt="check" class="informationImg">
+                    <p>PUEDE CIRCULAR DE 5 AM A 7 PM</p>
+                </div>
+                <div class="col-sm-4">
+                    SABADOS Y DOMINGOS, SOLAMENTE PUEDE CIRCULAR DE 5 AM A 7 PM
+                    SOLO PARA IR AL SUPERMECADO, ABASTECEDOR, FARMACIA, HOSPITAL, SALÓN DE BELLEZA, BARBERÍA, VENTA DE REPUESTOS PARA VEHICULOS.
+                </div>
+            </div>
+        </div>
+    </div>
+</body> 
+</html>
